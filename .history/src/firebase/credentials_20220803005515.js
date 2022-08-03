@@ -10,7 +10,7 @@ const firebaseConfig = {
   ///ATENTION!!!!!!!!!//
   //Ask me for configuration
 };
-//asaaaa
+//asa
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
