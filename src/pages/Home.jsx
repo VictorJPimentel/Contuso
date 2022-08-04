@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import getActiveProducts from "../helpers/getActiveProducts";
 import ItemCard from "../components/itemCard";
+import { signOut } from "firebase/auth";
+import { auth } from "../firebase/credentials";
 function Home() {
   const [products, setProducts] = useState(null);
 
@@ -13,8 +15,14 @@ function Home() {
     getProducts();
   }, []);
 
+  function logout() {
+    console.log("Logout");
+    signOut(auth);
+  }
+
   return (
     <>
+      <button onClick={logout}>Logout</button>
       <h1 className="text-3xl font-bold underline">Hello world!</h1>
       <br></br>
       <ul>

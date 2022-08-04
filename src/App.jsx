@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { auth } from "./firebase/credentials";
 import {
   Cart,
   Checkout,
@@ -8,9 +9,20 @@ import {
   Product,
   Profile,
 } from "./pages";
-import "alpinejs";
+import { useUserContext } from "./contexts/userContext";
+import { onAuthStateChanged } from "firebase/auth";
 
 function App() {
+  const { user, setUser } = useUserContext();
+  onAuthStateChanged(auth, (firebaseUser) => {
+    if (firebaseUser) {
+      setUser(firebaseUser);
+    }
+    if (!firebaseUser) {
+      setUser(null);
+    }
+  });
+
   return (
     <>
       <Routes>
