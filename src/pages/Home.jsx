@@ -43,14 +43,14 @@ function Home() {
             <li>
               <a
                 href="#"
-                class="flex px-4 py-2 font-text text-stone-300 hover:bg-stone-700 rounded-md"
+                class="flex px-4 py-2 font-content text-stone-300 hover:bg-stone-700 rounded-md"
                 >Home</a
               >
             </li>
             <li class="relative">
               <a
                 href="#products"
-                class="flex w-full outline-none focus:outline-none px-4 py-2 font-text text-stone-300 hover:bg-stone-700 rounded-md"
+                class="flex w-full outline-none focus:outline-none px-4 py-2 font-content text-stone-300 hover:bg-stone-700 rounded-md"
 
               >
                 Products
@@ -59,7 +59,7 @@ function Home() {
             {/* <li>
               <a
                 href="./contactUs.html"
-                class="flex px-4 py-2 font-text text-stone-300 hover:bg-stone-700 rounded-md"
+                class="flex px-4 py-2 font-content text-stone-300 hover:bg-stone-700 rounded-md"
                 >Contact us
                 </a>
             </li> */}
@@ -83,13 +83,13 @@ function Home() {
         >
           The Most Reliable Car parts in the industry
         </h1>
-        <p class="mb-4 m-auto text-lg text-left font-main-text text-secondary">
+        <p class="mb-4 m-auto text-lg text-left font-content text-secondary">
           From all over the globe our products have impacted thousands of lifes
           by imporing the way their cars function. Our teams focus on
           maximizing the quality of our car parts so that you never have to worry about a car malfunction
         </p>
 
-        <p class="mb-4 m-auto text-lg text-left font-main-text text-secondary">
+        <p class="mb-4 m-auto text-lg text-left font-content text-secondary">
         We provide personal vehicle owners and enthusiasts with the <b>vehicle related products</b> and <b>knowledge</b> that fulfill their wants and needs at the right price.
         </p>
       </div>
@@ -140,19 +140,19 @@ function Home() {
               <a
                 href="https://www.instagram.com/carpartscom/?hl=en"
                 target="_blank"
-                class="px-4 text-sm text-stone-300 font-medium hover:text-stone-400"
+                class="px-4 text-sm text-stone-300 font-content hover:text-stone-400"
                 >Instagram</a
               >
               <a
                 href="https://www.facebook.com/carpartscom/"
                 target="_blank"
-                class="px-4 text-sm text-stone-300 font-medium hover:text-stone-400"
+                class="px-4 text-sm text-stone-300 font-content hover:text-stone-400"
                 >Facebook</a
               >
               <a
                 href="https://twitter.com/search?lang=en&q=%23carparts"
                 target="_blank"
-                class="px-4 text-sm text-stone-300 font-medium hover:text-stone-400"
+                class="px-4 text-sm text-stone-300 font-content hover:text-stone-400"
                 >Twitter</a
               >
             </div>

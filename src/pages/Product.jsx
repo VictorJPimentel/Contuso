@@ -15,7 +15,7 @@ function Product() {
       const product = await getProductByID(id);
       setProductInfo(product);
     }
-
+    console.log(productInfo)
     getProductInfo();
   }, [id]);
 
@@ -57,12 +57,12 @@ function Product() {
                     >Home
                   </a> */}
                   <Link to="/">
-                    <button className="flex px-4 py-2 font-text text-stone-300 hover:bg-stone-700 rounded-md">Home</button>
+                    <button className="flex px-4 py-2 font-content text-stone-300 hover:bg-stone-700 rounded-md">Home</button>
                   </Link>
                 </li>
                 <li>
                   <Link to="/cart">
-                    <button className="flex px-4 py-2 font-text text-stone-300 hover:bg-stone-700 rounded-md">Cart</button>
+                    <button className="flex px-4 py-2 font-content text-stone-300 hover:bg-stone-700 rounded-md">Cart</button>
                   </Link>
                 </li>
                 {/* <li class="relative">
@@ -87,24 +87,64 @@ function Product() {
         </nav>
         <div class= "grid place-items-center w-full h-full">
           {/* Item card in the middle */}
-          <div class="flex flex-col content-center justify-center bg-product h-auto w-80 lg:w-96 md:w-80 p-6 text-center rounded-lg shadow-lg">
+          <div class="flex flex-col content-center justify-center bg-product h-fit w-80 lg:w-96 md:w-80  p-6 text-center rounded-lg shadow-lg">
             <div className="w-full justify-between flex text-center ">
-              <div className="text-7xl font-bold text-stone-300 text-center font-title m-auto mb-10">
+              <div className="text-4xl font-bold text-stone-300 text-center font-title m-auto mb-4">
                 {productInfo?.name}
               </div>
             </div>
-            <img src={productInfo.images[0]} alt="" class=" lg:m-auto w-80 rounded-lg"/>
-            <br></br>
-            <button onClick={addToCart} className="p-4 bg-slate-600 font-text">
+            <img src={productInfo?.images[0]} alt="" class=" lg:m-auto w-80 rounded-lg"/>
+            <p class="font-content text-stone-300 my-3 font-bold">${productInfo?.price.unit_amount / 100}</p>
+            {/* <p>{productInfo?.description}</p> */}
+            <p class="font-content text-stone-300 text-sm text-left mb-3">{productInfo?.description}</p>
+            <button onClick={addToCart} className="p-4 bg-slate-600 hover:bg-slate-700 font-content rounded-lg">
               {" "}
               Add to cart
             </button>
             <br></br>
-            <button className="p-4 bg-slate-400"> Buy now</button>
+            <button className="p-4 bg-slate-400 hover:bg-slate-500 font-content"> Buy now</button>
           </div>
         </div>
       </div>
+      <footer class="text-stone-300 bg-primary">
+      <div class="max-w-3xl mx-auto py-6">
+        <hr class="h-px my-6 bg-primary" />
+        <div
+          class="flex flex-col items-center justify-between mt-6 md:flex-row"
+        >
+          <div>
+            <a
+              href="#"
+              class="text-xl font-bold font-title text-stone-300 hover:text-stone-400"
+              >CONTUSO&copy;</a
+            >
+          </div>
 
+          <div class="flex mt-4 md:m-0">
+            <div class="-m-x4">
+              <a
+                href="https://www.instagram.com/carpartscom/?hl=en"
+                target="_blank"
+                class="px-4 text-sm text-stone-300 font-content hover:text-stone-400"
+                >Instagram</a
+              >
+              <a
+                href="https://www.facebook.com/carpartscom/"
+                target="_blank"
+                class="px-4 text-sm text-stone-300 font-content hover:text-stone-400"
+                >Facebook</a
+              >
+              <a
+                href="https://twitter.com/search?lang=en&q=%23carparts"
+                target="_blank"
+                class="px-4 text-sm text-stone-300 font-content hover:text-stone-400"
+                >Twitter</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
       {/* <div className="w-full justify-between flex">
         <div className="text-5xl font-bold underline">
             Product: {productInfo?.name}

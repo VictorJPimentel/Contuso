@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       fontFamily:{
         title : ['Montserrat Alternates','sans-serif'],
-        text : ['Baloo Tamma 2', 'cursive']
+        content : ["'Poppins'", 'sans-serif']
       },
       fontSize: {
         'main-title' : '11rem',
