@@ -20,7 +20,9 @@ module.exports = {
       },
       colors : {
         primary : "#2F333B",
-        secondary : "#BCBECD"
+        secondary : "#BCBECD",
+        header : "#181c2c",
+        product: "#23262C",
       },
     },
   },

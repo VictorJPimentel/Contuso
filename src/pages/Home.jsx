@@ -24,7 +24,7 @@ function Home() {
     <>
       {/* <button onClick={logout}>Logout</button> */}
     <nav
-      class="lg:sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] bg-red-900 supports-backdrop-blur:bg-white/95 dark:bg-slate-900/75"
+      class="flex lg:sticky top-0   bg-header opacity-90"
     >
       <div
         class="container flex flex-wrap px-4 py-2 mx-auto lg:mx-0 lg:space-x-4"
