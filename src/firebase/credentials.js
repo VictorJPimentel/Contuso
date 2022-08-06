@@ -9,6 +9,12 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 const firebaseConfig = {
   ///ATENTION!!!!!!!!!//
   //Ask me for configuration
+  apiKey: "AIzaSyC1SCuGJLTDpwGTSgk26VfcPqM9rsBOKaY",
+  authDomain: "spotter-e8911.firebaseapp.com",
+  projectId: "spotter-e8911",
+  storageBucket: "spotter-e8911.appspot.com",
+  messagingSenderId: "542771962630",
+  appId: "1:542771962630:web:b213f8968c9af6e11a3487",
 };
 //asaaaa
 // Initialize Firebase
